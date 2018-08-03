@@ -61,4 +61,4 @@ Options:
 
 There is an example `index.html` in `output` dir.
 
-![Screenshot](https://github.com/maximtrp/tab/master/images/screenshot.png "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/maximtrp/tab/master/images/screenshot.png "Screenshot")

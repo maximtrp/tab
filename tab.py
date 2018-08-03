@@ -8,6 +8,7 @@ from optparse import OptionParser
 
 # Command-line options
 parser = OptionParser(usage="Usage: %prog [options]")
+parser.add_option("-c", dest="columns_num", type="int", metavar='NUM', help='maximum columns number', default=6)
 parser.add_option("-s", "--css", dest="styles", action="store_true", help='integrate "template/styles.css" into index.html', default=False)
 parser.add_option("-r", dest="remove_icons", action="store_true", help="remove icons", default=False)
 options, args = parser.parse_args()
@@ -64,7 +65,7 @@ for group_title, entries in bm_yaml.items():
 # Making groups
 group_html = "\n".join(groups_prehtml)
 num_words = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six'}
-num = min(len(bm_yaml), 6)
+num = min(len(bm_yaml), options.columns_num)
 rep = ('{groups}', group_html), ('{num}', num_words[num]),\
         ('{styles}', styles if options.styles else ''),\
         ('{styles_ext}', '' if options.styles else '<link rel="stylesheet" type="text/css" href="styles.css">')

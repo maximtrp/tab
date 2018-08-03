@@ -6,7 +6,7 @@
 
 Bookmarks are stored in a separate YAML file names `bookmarks.yml`. Its format should fit the following one:
 
-```
+```yml
 Coding:
     GitHub:
         href: //github.com
@@ -28,7 +28,7 @@ Template files are currently hardcoded to be placed in a `template` dir. There m
 
 Stylesheet `styles.css` is optional. It may be integrated into `index.html`(use `-s` flag).
 
-By default, group and link icons are enabled. To disable, use `-r` flag.
+By default, group and link icons are enabled. To disable, use `-r` flag. You may specify maximum columns number with `-c` flag.
 
 ## Template
 
@@ -46,12 +46,13 @@ You may create your own template. Just be sure to use these template variables:
 
 Run with a `-h` flag to see help.
 
-```
+```bash
 $ python tab.py -h
 Usage: tab.py [options]
 
 Options:
   -h, --help  show this help message and exit
+  -c NUM      maximum columns number
   -s, --css   integrate "template/styles.css" into index.html
   -r          remove icons
 ```
@@ -59,3 +60,5 @@ Options:
 ## Example
 
 There is an example `index.html` in `output` dir.
+
+![Screenshot](https://github.com/maximtrp/tab/master/images/screenshot.png "Screenshot")

@@ -6,7 +6,7 @@
 
 Bookmarks are stored in a separate YAML file names `bookmarks.yml`. Its format should fit the following one:
 
-```
+```yml
 Coding:
     GitHub:
         href: //github.com

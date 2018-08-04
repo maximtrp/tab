@@ -10,8 +10,12 @@ Bookmarks are stored in a separate YAML file named `bookmarks.yml`. Its format s
 Coding:
     GitHub:
         href: //github.com
+        icon: git
     Travis CI:
         href: //travis-ci.org
+    BitBucket:
+        href: //bitbucket.org
+        icon: bitbucket
 
 Learn:
     Stepik:
@@ -22,7 +26,7 @@ Learn:
         href: //khanacademy.org
 ```
 
-This format is simple and intuitive. `Coding` is a group name (non-indeted block), `GitHub` is an entry (link) name, and `href` is used to store an URL (`tab` does not process it in any way now, so it is up to you).
+This format is simple and intuitive. `Coding` is a group name (non-indeted block), `GitHub` is an entry (link) name, `href` is used to store an URL (`tab` does not process it in any way now, so it is up to you), `icon` is an icon name (see full list at [Semantic UI](https://semantic-ui.com/elements/icon.html)).
 
 Template files are currently hardcoded to be placed in a `template` dir. There must be `index.html`, `group.html`, `link.html` files.
 

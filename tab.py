@@ -13,8 +13,11 @@ parser.add_option("-s", "--css", dest="styles", action="store_true", help='integ
 parser.add_option("-r", dest="remove_icons", action="store_true", help="remove icons", default=False)
 options, args = parser.parse_args()
 
+def iconify(icon_name):
+    return '<i class="' + icon_name + ' icon"></i>'
+
 if not options.remove_icons:
-    icons = {'group': '<i class="folder open icon"></i> ', 'entry': '<i class="linkify icon"></i> '}
+    icons = {'group': 'folder open', 'entry': 'linkify'}
 
 if options.styles:
     f = open('template/styles.css', 'r')
@@ -48,21 +51,29 @@ for group_title, entries in bm_yaml.items():
     
     # Iterating over entries and attributes
     for entry_title, entry_info in entries.items():
+        
+        # Icons
         if not options.remove_icons:
-            entry_title = icons['entry'] + entry_title
+            icon = icons['entry'] if 'icon' not in entry_info else entry_info['icon']
+            entry_title = iconify(icon) + entry_title
+
+        # Links HTML
         rep = ('{title}', entry_title), ('{href}', entry_info['href'])
         entry_str = reduce(lambda a, k: a.replace(*k), rep, link_tmp.strip())
         entries_prehtml.append(entry_str)
 
+    # Combining entries HTMLs
     entries_html = " ".join(entries_prehtml)
     if not options.remove_icons:
-        group_title = icons['group'] + group_title
+        group_title = iconify(icons['group']) + group_title
+
+    # Group HTML
     rep = ('{groupname}', group_title), ('{links}', entries_html)
     group_str = reduce(lambda a, v: a.replace(*v), rep, group_tmp)
     groups_prehtml.append(group_str)
 
 
-# Making groups
+# Combining groups
 group_html = "\n".join(groups_prehtml)
 num_words = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six'}
 num = min(len(bm_yaml), options.columns_num)

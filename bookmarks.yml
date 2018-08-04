@@ -1,10 +1,12 @@
 Coding:
     GitHub:
         href: //github.com
+        icon: git
     Travis CI:
         href: //travis-ci.org
     BitBucket:
         href: //bitbucket.org
+        icon: bitbucket
 
 Learn:
     Stepik:
@@ -17,26 +19,34 @@ Learn:
 Read:
     Medium:
         href: //medium.com
+        icon: medium
     Reddit:
         href: //reddit.com
+        icon: reddit
     Habr:
         href: //habrahabr.ru
     StackOverflow:
         href: //stackoverflow.com
+        icon: stack overflow
 
 Social &amp; Media:
     GMail:
         href: //gmail.com
+        icon: google
     VK:
         href: //vk.com
     Facebook:
         href: //facebook.com
+        icon: facebook
     Twitter:
         href: //twitter.com
+        icon: twitter
     Last.fm:
         href: //last.fm
+        icon: lastfm
     Tumblr:
         href: //tumblr.com
+        icon: tumblr
 
 Science:
     Nature:
@@ -47,5 +57,6 @@ Science:
         href: //researchgate.net
     Scholar:
         href: //scholar.google.com
+        icon: google
     Pubmed:
         href: //www.ncbi.nlm.nih.gov/pubmed

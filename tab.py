@@ -14,7 +14,7 @@ parser.add_option("-r", dest="remove_icons", action="store_true", help="remove i
 options, args = parser.parse_args()
 
 if not options.remove_icons:
-    icons = {'group': '<i class="folder open"></i> ', 'entry': '<i class="linkify"></i> '}
+    icons = {'group': '<i class="folder open icon"></i> ', 'entry': '<i class="linkify icon"></i> '}
 
 if options.styles:
     f = open('template/styles.css', 'r')

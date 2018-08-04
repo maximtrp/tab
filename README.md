@@ -4,7 +4,7 @@
 
 ## Basics
 
-Bookmarks are stored in a separate YAML file names `bookmarks.yml`. Its format should fit the following one:
+Bookmarks are stored in a separate YAML file named `bookmarks.yml`. Its format should fit the following one:
 
 ```yml
 Coding:

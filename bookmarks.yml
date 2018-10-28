@@ -11,6 +11,8 @@ Coding:
         href: //travis-ci.org
 
 Learn:
+    freeCodeCamp:
+        href: //freecodecamp.org
     Stepik:
         href: //stepik.org
     Udacity:
@@ -19,14 +21,16 @@ Learn:
         href: //khanacademy.org
 
 Read:
+    Dev.to:
+        href: //dev.to
+    Habr:
+        href: //habrahabr.ru
     Medium:
         href: //medium.com
         icon: medium
     Reddit:
         href: //reddit.com
         icon: reddit
-    Habr:
-        href: //habrahabr.ru
     StackOverflow:
         href: //stackoverflow.com
         icon: stack overflow

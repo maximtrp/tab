@@ -58,14 +58,22 @@ Social &amp; Media:
         icon: youtube
 
 Science:
+    Cell:
+        href: //cell.com
+    Frontiers:
+        href: //frontiersin.org
+    Lancet:
+        href: //thelancet.com
     Nature:
         href: //nature.com
-    Science:
-        href: //sciencemag.com
+    PLoS ONE:
+        href: //journals.plos.org
+    Pubmed:
+        href: //www.ncbi.nlm.nih.gov/pubmed
     Researchgate:
         href: //researchgate.net
     Scholar:
         href: //scholar.google.com
         icon: google
-    Pubmed:
-        href: //www.ncbi.nlm.nih.gov/pubmed
+    Science:
+        href: //sciencemag.com

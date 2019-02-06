@@ -26,11 +26,11 @@ Learn:
         href: //khanacademy.org
 ```
 
-This format is simple and intuitive. `Coding` is a group name (non-indeted block), `GitHub` is an entry (link) name, `href` is used to store an URL (`tab` does not process it in any way now, so it is up to you), `icon` is an icon name (see full list at [Semantic UI](https://semantic-ui.com/elements/icon.html)).
+This format is simple and intuitive. `Coding` is a group name (non-indented block), `GitHub` is an entry (link) name, `href` is used to store an URL (`tab` does not process it in any way now, so it is up to you), `icon` is an icon name (see full list at [Semantic UI](https://semantic-ui.com/elements/icon.html)).
 
-Template files are currently hardcoded to be placed in a `template` dir. There must be `index.html`, `group.html`, `link.html` files.
+Template files are currently hardcoded to be placed in `template` dir. There must be `index.html`, `group.html`, `link.html` files.
 
-Stylesheet `styles.css` is optional. It may be integrated into `index.html`(use `-s` flag).
+Stylesheet `styles.css` is optional. It may be integrated into `index.html` (use `-s` flag).
 
 By default, group and link icons are enabled. To disable, use `-r` flag. You may specify maximum columns number with `-c` flag.
 

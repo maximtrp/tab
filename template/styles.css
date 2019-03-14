@@ -13,3 +13,6 @@ body {
 .ui.vertical.menu .item>i.icon {
     float: left;
 }
+#search-block {
+    padding: 50px 0;
+}

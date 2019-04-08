@@ -3,6 +3,7 @@ html {
 }
 body {
     background-color: #f2f3f5;
+    margin: 0 2em;
 }
 .holder {
     height: 100%;

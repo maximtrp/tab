@@ -1,26 +1,38 @@
-Coding:
+Listen:
+    Mixcloud:
+        href: //mixcloud.com
+        icon: mixcloud
+    DI:
+        href: //di.fm
+
+Code:
     BitBucket:
         href: //bitbucket.org
         icon: bitbucket
     GitHub:
         href: //github.com
-        icon: git
+        icon: github
     Read the Docs:
         href: //readthedocs.org
     Travis CI:
         href: //travis-ci.org
 
 Learn:
+    Coursera:
+        href: //coursera.org
     freeCodeCamp:
         href: //freecodecamp.org
-    Stepik:
-        href: //stepik.org
-    Udacity:
-        href: //udacity.com
+        icon: free code camp
     KhanAcademy:
         href: //khanacademy.org
     Rosalind:
         href: //rosalind.info
+    Stepik:
+        href: //stepik.org
+    Udacity:
+        href: //udacity.com
+    Udemy:
+        href: //www.udemy.com
 
 Read:
     Dev.to:
@@ -55,8 +67,10 @@ Social &amp; Media:
         icon: twitter
     Vimeo:
         href: //vimeo.com
+        icon: vimeo
     VK:
         href: //vk.com
+        icon: vk
     Youtube:
         href: //youtube.com
         icon: youtube

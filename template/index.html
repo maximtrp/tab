@@ -17,7 +17,7 @@
 <div class="ui center aligned container" id="search-block">
     <div class="ui big action input">
         <input autofocus class="prompt" type="search" size="40" placeholder="Google..." id="search">
-        <button class="ui icon button">
+        <button class="ui icon button" id="search_button">
             <i class="search icon"></i>
         </button>
     </div>
@@ -28,11 +28,17 @@
 </div>
 
 <script>
-$("#search").on("search", function() {
+function search() {
     var query = $("#search").val();
     window.open("https://www.google.com/search?q=" + query + "&oq=" + query, "_self");
-  });
+}
+
+$("#search_button").on('click', search);
+$("#search").on('keyup', function (e) { 
+    if (e.keyCode == 13) {
+        search();
+    }
+});
 </script>
 </body>
-
 </html>

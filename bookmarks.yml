@@ -9,6 +9,10 @@ Code:
     BitBucket:
         href: //bitbucket.org
         icon: bitbucket
+    Codacy:
+        href: //app.codacy.com
+    Codecov:
+        href: //codecov.com
     GitHub:
         href: //github.com
         icon: github

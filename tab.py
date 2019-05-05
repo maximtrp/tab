@@ -43,11 +43,9 @@ with open('template/link.html') as f:
 groups_prehtml = []
 
 for group_title, entries in bm_yaml.items():
-
     # Group contains title and entries
     # Iterating a group
     entries_prehtml = []
-    
     # Iterating over entries and attributes
     for entry_title, entry_info in entries.items():
         # Icons

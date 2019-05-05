@@ -1,4 +1,6 @@
 # tab
+.. image:: https://api.codacy.com/project/badge/Grade/b3f339a228634aeaafdac97283e25132
+    :target: https://www.codacy.com/app/maximtrp/tab?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=maximtrp/tab&amp;utm_campaign=Badge_Grade
 
 `tab` is a simple start page generator written in Python. It uses primitive templating, YAML, and outputs a single `index.html`. Default template is based on [Semantic UI](https://semantic-ui.com/).
 

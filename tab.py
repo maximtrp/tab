@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import os
 import yaml
+import shutil
 from functools import reduce
 from optparse import OptionParser
 
@@ -23,7 +24,7 @@ if options.styles:
     styles = f.read()
     f.close()
 else:
-    os.system('cp ./template/styles.css ./output/styles.css')
+    shutil.copyfile('template/styles.css', 'output/styles.css')
 
 # Importing bookmarks
 bm = open('bookmarks.yml')

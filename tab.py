@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import os
 import yaml
-import sys
 from functools import reduce
 from optparse import OptionParser
 
@@ -51,7 +50,6 @@ for group_title, entries in bm_yaml.items():
     
     # Iterating over entries and attributes
     for entry_title, entry_info in entries.items():
-        
         # Icons
         if not options.remove_icons:
             icon = icons['entry'] if 'icon' not in entry_info else entry_info['icon']

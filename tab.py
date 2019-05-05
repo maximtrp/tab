@@ -22,6 +22,8 @@ if options.styles:
     f = open('template/styles.css', 'r')
     styles = f.read()
     f.close()
+else:
+    os.system('cp ./template/styles.css ./output/styles.css')
 
 # Importing bookmarks
 bm = open('bookmarks.yml')

@@ -84,6 +84,5 @@ os.makedirs('output', exist_ok=True)
 
 
 # Writing a file
-f = open('output/index.html', 'w')
-f.write(body_html)
-f.close()
+with open('output/index.html', 'w') as f:
+    f.write(body_html)

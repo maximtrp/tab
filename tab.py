@@ -8,7 +8,7 @@ from optparse import OptionParser
 
 # Command-line options
 parser = OptionParser(usage="Usage: %prog [options]")
-parser.add_option("-c", dest="columns_num", type="int", metavar='NUM', help='maximum columns number', default=6)
+parser.add_option("-c", dest="columns_num", type="int", metavar='NUM', help='maximum columns number (default: 6)', default=6)
 parser.add_option("-s", "--css", dest="styles", action="store_true", help='integrate "template/styles.css" into index.html', default=False)
 parser.add_option("-r", dest="remove_icons", action="store_true", help="remove icons", default=False)
 options, args = parser.parse_args()

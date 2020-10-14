@@ -1,19 +1,24 @@
 html {
     font-size: 16px;
 }
+
 body {
     background-color: #f2f3f5;
     margin: 0 2em;
 }
+
 .holder {
     height: 100%;
 }
+
 .ui.vertical.menu {
     width: initial;
 }
-.ui.vertical.menu .item>i.icon {
+
+.ui.vertical.menu .item > i.icon {
     float: left;
 }
+
 #search-block {
     padding: 50px 0;
 }

@@ -4,6 +4,9 @@ Listen:
         icon: mixcloud
     DI:
         href: //di.fm
+    Spotify:
+        href: //spotify.com
+        icon: spotify
 
 Code:
     BitBucket:
